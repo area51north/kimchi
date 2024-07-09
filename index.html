@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimchi Premium Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kimchi Premium Calculator</h1>
+        <div class="input-group">
+            <label for="usdPrice">USD Price in KRW:</label>
+            <input type="number" id="usdPrice" placeholder="Enter USD Price in KRW">
+        </div>
+        <div class="input-group">
+            <label for="usdtPrice">USDT Price in KRW:</label>
+            <input type="number" id="usdtPrice" placeholder="Enter USDT Price in KRW">
+        </div>
+        <button onclick="calculateKimchiPremium()">Calculate</button>
+        <div id="result">
+            Kimchi Premium: <span id="premiumPercentage">0</span>%
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
